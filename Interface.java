@@ -74,24 +74,19 @@ public class Interface extends JFrame {
                    StringBuilder sb = new StringBuilder();
                    
                    for(byte b: messageDigest){
-                       sb.append(String.format("%02X", 0xFF & b));
-                       
-                      
+                       sb.append(String.format("%02X", 0xFF & b));                 
                    }
+
                    String senhaHex = sb.toString();
                    JOptionPane.showMessageDialog(null," \nSua senha codificada é : " + senhaHex + "\nSua senha é: "+ teste );
-                  dispose();
-               }catch(Exception e){
+                   dispose();
+
+                }catch(Exception e){
                    
-               }
-                
-                
-                
-                  
+                } 
             }
                         
-                        }
-        );
-    }
+         });
+  }
     
 }
